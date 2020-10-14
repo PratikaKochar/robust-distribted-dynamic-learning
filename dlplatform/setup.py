@@ -1,0 +1,23 @@
+from setuptools import setup
+
+setup(name='DLplatform',
+      version           = '0.0.6',
+      description       = 'A framework to perform large scale experiments with distributed learners',
+      url               = '',
+      author            = 'Kamp, Adilova',
+      author_email      = 'info@michaelkamp.org',
+      license           = 'Apache2.0',
+      python_requires   = '>3.5',
+      packages          = ['DLplatform',
+                           'DLplatform/aggregating',
+                           'DLplatform/communicating',
+                           'DLplatform/dataprovisioning',
+                           'DLplatform/learning',
+                           'DLplatform/learning/batch',
+                           'DLplatform/learning/deeplearning',
+                           'DLplatform/learning/factories',
+                           'DLplatform/learning/online',
+                           'DLplatform/parameters',
+                           'DLplatform/synchronizing',
+                           'DLplatform/stopping'],
+      zip_safe          = False)
